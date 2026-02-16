@@ -1,3 +1,27 @@
+if identifyexecutor then
+	if string.find(string.lower(({identifyexecutor()})[1]), 'jjsploit') or string.find(string.lower(({identifyexecutor()})[1]), 'bytebreaker') then
+		getgenv().identifyexecutor = function()
+			return 'Xeno'
+		end
+	end
+	if table.find({'Xeno', '5.0'}, ({identifyexecutor()})[1]) or not (debug.getupvalue or debug.getupvalues or debug.getproto or debug.getconstants or hookfunction or hookmetamethod or getconnections or require) then
+		shared.badexecs = true
+		return loadstring(game:HttpGet("https://raw.githubusercontent.com/minecraftfornpm/Memesen/main/NewMainScript.lua", true))()
+	end
+end
+
+if require then
+	local cloneref = cloneref or function(val) return val end
+	
+	local lplr = cloneref(game:GetService('Players')).LocalPlayer
+	local suc = pcall(function() return require(lplr.PlayerScripts.PlayerModule).controls end)
+
+	if not suc then
+		shared.badexecs = true
+		return loadstring(game:HttpGet("https://raw.githubusercontent.com/minecraftfornpm/Memesen/main/NewMainScript.lua", true))()
+	end
+end
+
 local isfile = isfile or function(file)
 	local suc, res = pcall(function()
 		return readfile(file)
@@ -37,19 +61,6 @@ end
 for _, folder in {'newvape', 'newvape/games', 'newvape/profiles', 'newvape/assets', 'newvape/libraries', 'newvape/guis', 'newvape/cache'} do
 	if not isfolder(folder) then
 		makefolder(folder)
-	end
-end
-
-if identifyexecutor then
-	if string.find(({identifyexecutor()})[1], 'JJSploit') then
-		getgenv().identifyexecutor = function()
-			return 'Xeno'
-		end
-	end
-	if table.find({'Xeno'}, ({identifyexecutor()})[1]) then
-		getgenv().cloneref = function(val)
-			return val
-		end
 	end
 end
 
