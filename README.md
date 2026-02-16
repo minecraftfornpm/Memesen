@@ -37,12 +37,3 @@ If its not the supposed utility at fault, please try some troubleshooting steps.
 ## Developers & Credits
 [7GrandDad](https://github.com/7GrandDadPGN) - Lead maintainer of the project - vaperoblox on Discord
 <br/>
-[sstvskids](https://github.com/sstvskids) - Fork maintainer - ._stav on Discord
-<br/>
-[rce-incorporated](https://github.com/rce-incorporated/Fiu) - Luau bytecode disassembly with modifications
-<br/>
-[Egor Skriptunoff, boatbomber, and howmanysmall](https://devforum.roblox.com/t/open-source-hashlib/416732/1) - HashLibrary for Luau
-<br/>
-[Vernumerator](https://devforum.roblox.com/t/predict-projectile-ballistics-including-gravity-and-motion/1842434) - Projectile prediction for Roblox
-<br/>
-[breter98](https://github.com/coolpeter98) - Helping out with Spotify UI
