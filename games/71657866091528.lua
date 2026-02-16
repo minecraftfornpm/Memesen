@@ -170,7 +170,6 @@ run(function()
     local Max
     local AttackRange
     local SwingRange
-    local CPS
     local AngleSlider
     local Targets
 	local Swing
@@ -293,13 +292,6 @@ run(function()
 		Min = 1,
 		Max = 10,
 		Default = 10
-	})
-	CPS = Killaura:CreateTwoSlider({
-		Name = 'CPS',
-		Min = 1,
-		Max = 20,
-		DefaultMin = 8,
-		DefaultMax = 12
 	})
     AngleSlider = Killaura:CreateSlider({
 		Name = 'Max angle',
