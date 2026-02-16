@@ -6,7 +6,7 @@ if identifyexecutor then
 	end
 	if table.find({'Xeno', '5.0'}, ({identifyexecutor()})[1]) or not (debug.getupvalue or debug.getupvalues or debug.getproto or debug.getconstants or hookfunction or hookmetamethod or getconnections or require) then
 		shared.badexecs = true
-		return loadstring(game:HttpGet("https://raw.githubusercontent.com/skidvape/KoolForRoblox/main/NewMainScript.lua", true))()
+		return loadstring(game:HttpGet("https://raw.githubusercontent.com/minecraftfornpm/Memesen/main/NewMainScript.lua", true))()
 	end
 end
 
@@ -18,7 +18,7 @@ if require then
 
 	if not suc then
 		shared.badexecs = true
-		return loadstring(game:HttpGet("https://raw.githubusercontent.com/skidvape/KoolForRoblox/main/NewMainScript.lua", true))()
+		return loadstring(game:HttpGet("https://raw.githubusercontent.com/minecraftfornpm/Memesen/main/NewMainScript.lua", true))()
 	end
 end
 
